@@ -4,25 +4,25 @@ const FLU = document.getElementById('flu');
 const MAN = document.getElementById('man');
 const PESO_INPUT = document.getElementById('peso');
 
-// Function to handle the button click event
+s
 function handleClick() {
     calculate();
 }
 
-// Function to handle the Enter key press event
+
 function handleKeyPress(event) {
     if (event.key === 'Enter') {
         calculate();
     }
 }
 
-// Attach the click event listener to the button
+
 CALCULAR.addEventListener('click', handleClick);
 
-// Attach the key press event listener to the input field
+
 PESO_INPUT.addEventListener('keypress', handleKeyPress);
 
-// Main calculation function
+
 function calculate() {
     const DATO = PESO_INPUT.valueAsNumber;
     const FLUText = (peso, factor) => `${peso} cc/hr`;
